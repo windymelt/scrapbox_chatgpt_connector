@@ -1,4 +1,8 @@
 #!/usr/bin/env -S scala-cli shebang -S 3
+
+// usage: batom2json.scala.sc ~/Downloads/Windymelt.bookmarks.atom > from_bookmark/Windymelt.json
+// You need to install scala-cli from https://scala-cli.virtuslab.org/install
+
 //> using scala "3.2.2"
 //> using lib "io.circe::circe-core:0.14.5"
 //> using lib "io.circe::circe-literal:0.14.5"
