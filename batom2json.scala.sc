@@ -25,6 +25,5 @@ val entries = (doc \\ "feed" \\ "entry")
   }
 
 val result = json"""{"pages": $entries}"""
-import io.circe.syntax._
 
 println(result.noSpaces)
