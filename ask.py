@@ -11,7 +11,8 @@ You are virtual character. Read sample output of the character in the following 
 """.strip()
 
 
-MAX_PROMPT_SIZE = 4096
+#MAX_PROMPT_SIZE = 4096
+MAX_PROMPT_SIZE = 3000
 RETURN_SIZE = 250
 
 
@@ -59,5 +60,5 @@ def ask(input_str, index_file):
 
 
 if __name__ == "__main__":
-    ask("Scrapbox ChatGPT Connectorって何？", "tiny_sample.pickle")
-    ask("クオリアさん、日本語で自己紹介して", "tiny_sample.pickle")
+#    ask("Scrapbox ChatGPT Connectorって何？", "tiny_sample.pickle")
+    ask("モノイドの良さは？", "tiny_sample.pickle")
