@@ -12,7 +12,9 @@
 val doc = scala.xml.XML.loadFile(args.head)
 
 val elem2titleLine: scala.xml.Node => Option[(String, String)] =
-  case e: scala.xml.Elem => Some((e \ "title").text -> (e \ "summary").text)
+  case e: scala.xml.Elem =>  (e \ "summary").text match
+    case "" => None
+    case s => Some((e \ "title").text -> s)
   case _ => None
 
 import io.circe.literal._
